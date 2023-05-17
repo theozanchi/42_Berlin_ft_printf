@@ -6,7 +6,7 @@
 /*   By: tzanchi <tzanchi@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 17:35:26 by tzanchi           #+#    #+#             */
-/*   Updated: 2023/05/17 12:33:23 by tzanchi          ###   ########.fr       */
+/*   Updated: 2023/05/17 16:57:13 by tzanchi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,7 @@ static size_t	display_data(char specifier, va_list ap)
 	else if (specifier == 's')
 		count = putstr_count(va_arg(ap, char *));
 	else if (specifier == 'p')
-		count = putstr_count(POINTER_PREFIX)
-			+ putptr_base_count(va_arg(ap, void *), HEX_BASE_LOW);
+		count = putptr_base_count(va_arg(ap, void *), HEX_BASE_LOW, 1);
 	else if (specifier == 'd' || specifier == 'i')
 		count = putnbr_base_count(va_arg(ap, int), DEC_BASE);
 	else if (specifier == 'u')

@@ -6,7 +6,7 @@
 #    By: tzanchi <tzanchi@student.42berlin.de>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/11 10:40:26 by tzanchi           #+#    #+#              #
-#    Updated: 2023/05/16 16:07:30 by tzanchi          ###   ########.fr        #
+#    Updated: 2023/05/17 12:18:18 by tzanchi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,10 +19,8 @@ SRCS_DIR	=	./sources/
 HEAD_DIR	=	./includes/
 LIBFT_DIR	=	./libft/
 
-SRC			=	counters.c \
-				ft_printf.c \
-				ft_putnbr_base_fd.c \
-				ft_putptr_fd.c
+SRC			=	ft_printf_writers.c \
+				ft_printf.c
 
 SRCS		=	$(addprefix ${SRCS_DIR}, ${SRC})
 

@@ -6,7 +6,7 @@
 /*   By: tzanchi <tzanchi@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 12:48:25 by tzanchi           #+#    #+#             */
-/*   Updated: 2023/05/16 16:15:40 by tzanchi          ###   ########.fr       */
+/*   Updated: 2023/05/17 12:16:18 by tzanchi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,8 @@
 
 int	main(void)
 {
-	ft_printf("I am currently testing this %i thing and this %d too", 42, 24);
+	char	*str;
+
+	str = "This is a test";
+	ft_printf("%p", str);
 }

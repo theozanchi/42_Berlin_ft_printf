@@ -6,7 +6,7 @@
 /*   By: tzanchi <tzanchi@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 15:52:28 by tzanchi           #+#    #+#             */
-/*   Updated: 2023/05/17 16:57:44 by tzanchi          ###   ########.fr       */
+/*   Updated: 2023/05/18 15:53:08 by tzanchi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@
 # define HEX_BASE_LOW "0123456789abcdef"
 # define HEX_BASE_UP "0123456789ABCDEF"
 # define POINTER_PREFIX "0x"
+# define NULL_DISPLAY "(null)"
+# define NIL_DISPLAY "(nil)"
 
 int		ft_printf(const char *s, ...);
 size_t	putchar_count(int c);

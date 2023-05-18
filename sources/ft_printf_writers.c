@@ -6,7 +6,7 @@
 /*   By: tzanchi <tzanchi@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 16:31:27 by tzanchi           #+#    #+#             */
-/*   Updated: 2023/05/17 16:56:46 by tzanchi          ###   ########.fr       */
+/*   Updated: 2023/05/18 15:53:57 by tzanchi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ size_t	putstr_count(char *s)
 
 	if (s == NULL)
 	{
-		write(1, "(null)", 6);
+		write(1, NULL_DISPLAY, ft_strlen(NULL_DISPLAY));
 		return (6);
 	}
 	count = 0;
@@ -82,11 +82,11 @@ size_t	putptr_base_count(void *ptr, char *base, int first_loop_flag)
 	count = 0;
 	if (ptr == NULL)
 	{
-		count += putstr_count("(nil)");
+		count += putstr_count(NIL_DISPLAY);
 		return (count);
 	}
 	if (first_loop_flag == 1)
-		count += putstr_count("0x");
+		count += putstr_count(POINTER_PREFIX);
 	if (nbr >= base_length)
 		count += putptr_base_count((void *)(nbr / base_length), base, 0);
 	count += putchar_count(base[nbr % base_length]);

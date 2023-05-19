@@ -6,7 +6,7 @@
 /*   By: tzanchi <tzanchi@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 15:52:28 by tzanchi           #+#    #+#             */
-/*   Updated: 2023/05/19 16:42:13 by tzanchi          ###   ########.fr       */
+/*   Updated: 2023/05/19 17:04:34 by tzanchi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include "libft.h"
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdarg.h>
 
 # define DEC_BASE "0123456789"
 # define HEX_BASE_LOW "0123456789abcdef"

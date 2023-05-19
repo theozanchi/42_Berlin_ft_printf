@@ -6,7 +6,7 @@
 #    By: tzanchi <tzanchi@student.42berlin.de>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/11 10:40:26 by tzanchi           #+#    #+#              #
-#    Updated: 2023/05/18 12:25:29 by tzanchi          ###   ########.fr        #
+#    Updated: 2023/05/19 16:53:38 by tzanchi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,9 +41,11 @@ ${NAME}:		${OBJS} ${LIBFT}
 				${CC} ${CFLAGS} -I${HEAD_DIR} -I${LIBFT_DIR} -c $< -o $@
 				
 clean:
+				make -C ${LIBFT_DIR} clean
 				rm -f ${OBJS}
 
 fclean:			clean
+				make -C ${LIBFT_DIR} fclean
 				rm -f ${NAME}
 
 re:				fclean all

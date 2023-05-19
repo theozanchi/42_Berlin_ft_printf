@@ -6,7 +6,7 @@
 /*   By: tzanchi <tzanchi@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 17:35:26 by tzanchi           #+#    #+#             */
-/*   Updated: 2023/05/17 16:57:13 by tzanchi          ###   ########.fr       */
+/*   Updated: 2023/05/19 16:40:20 by tzanchi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,10 +51,7 @@ int	ft_printf(const char *s, ...)
 			s++;
 		}
 		else
-		{
-			ft_putchar_fd(*s++, 1);
-			printed_count++;
-		}
+			printed_count += putchar_count(*s++);
 	}
 	va_end(ap);
 	return (printed_count);
